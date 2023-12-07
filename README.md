@@ -7,38 +7,39 @@ shows a small description in the preview and returns the issue id on selection.
 Also you might need to track your time spent on issues.
 You'll be able to do it via the Youtrack Time Tracking plugin.
 
-## How To
+## Installation
 
-1. Install this repository with your favorite plugin manager.
+Install this repository with your favorite plugin manager.
 
-   ```lua
-   use 'ruslan-korneev/youtrack.nvim'
-   ```
+```lua
+use 'ruslan-korneev/youtrack.nvim'
+```
 
-2. Add youtrack to the telescope extensions
+## Add youtrack to the telescope extensions
 
-   `url` and `token` are mandetory parameters.
-   The query parameter can be optionally adjusted.
+`url` and `token` are mandetory parameters.
+The query parameter can be optionally adjusted.
 
    <!--  TODO: implement the command for authentication  -->
    <!--   instead of writing the token in config -->
 
-   ```lua
-   extensions = {
-       youtrack = {
-           url = "https://youtrack.example.com",
-           token = "perm:XXX",
-           query = "for: me #Unresolved ",
-       },
-       ...
-   }
-   ```
+```lua
+extensions = {
+    youtrack = {
+        url = "https://youtrack.example.com",
+        token = "perm:XXX",
+        query = "for: me #Unresolved ",
+    },
+    ...
+}
+```
 
-3. Add keybindings. The extension can be started via:
-   `Telescope youtrack`
+## Add keybindings. The extension can be started via
 
-   To leave telescope in insert mode:
+`Telescope youtrack`
 
-   ```lua
-       require("telescope").extensions.youtrack.youtrack({ insert_mode = true })
-   ```
+## To leave telescope in insert mode
+
+```lua
+    require("telescope").extensions.youtrack.youtrack({ insert_mode = true })
+```
