@@ -26,7 +26,7 @@ You'll be able to do it via the Youtrack Time Tracking plugin.
    ```lua
    extensions = {
        youtrack = {
-           url = "youtrack.example.com",
+           url = "https://youtrack.example.com",
            token = "perm:XXX",
            query = "for: me #Unresolved ",
        },
@@ -35,7 +35,7 @@ You'll be able to do it via the Youtrack Time Tracking plugin.
    ```
 
 3. Add keybindings. The extension can be started via:
-   `Telescope youtrack youtrack`
+   `Telescope youtrack`
 
    To leave telescope in insert mode:
 
